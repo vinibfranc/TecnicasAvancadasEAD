@@ -11,10 +11,13 @@ public class App {
 				try {
 					JanelaPrincipal janela = new JanelaPrincipal();
 					Controlador controle = new Controlador(janela);
-					janela.setVisible(true);
+					
+					// ----> As seguintes funções podem ser postas no construtor de JanelPrincipal
+
+					/*janela.setVisible(true);
 					janela.getTxtPrimeiroNum().grabFocus(); // ajusta o foco para o textField do primeiro número
 					janela.setResizable(false);
-					janela.setLocationRelativeTo(null); // centralização na janela no centro da tela
+					janela.setLocationRelativeTo(null); // centralização na janela no centro da tela*/
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
