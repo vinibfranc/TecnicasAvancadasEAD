@@ -1,17 +1,17 @@
 package modelo;
-
+// classe que contém as regras de negócio da aplicação
 public class Calculadora {
 	private int num1;
 	private int num2;
 	private int resultado;
 	
+	// construtor da calculadora
 	public Calculadora(int num1, int num2, int resultado) {
-		super();
 		this.num1 = num1;
 		this.num2 = num2;
 		this.resultado = resultado;
 	}
-
+	// getters e setters
 	public int getNum1() {
 		return num1;
 	}
