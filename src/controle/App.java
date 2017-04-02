@@ -1,15 +1,24 @@
 package controle;
 
+import java.awt.EventQueue;
 import visao.JanelaPrincipal;
 
 public class App {
 	// método principal da aplicação
 	public static void main(String[] args) {
-		JanelaPrincipal janela = new JanelaPrincipal();
-		Controlador controle = new Controlador(janela);
-		janela.setVisible(true);
-		janela.setResizable(false);
-		janela.setLocationRelativeTo(null); // centralização na janela no centro da tela
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					JanelaPrincipal janela = new JanelaPrincipal();
+					Controlador controle = new Controlador(janela);
+					janela.setVisible(true);
+					janela.getTxtPrimeiroNum().grabFocus(); // ajusta o foco para o textField do primeiro número
+					janela.setResizable(false);
+					janela.setLocationRelativeTo(null); // centralização na janela no centro da tela
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
 	}
 }
-

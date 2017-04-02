@@ -35,4 +35,8 @@ public class Calculadora {
 	public void setResultado(int resultado) {
 		this.resultado = resultado;
 	}
+	// método que calcula a soma entre os dois números informados
+	public static int somaDoisNumeros(int x, int y) {
+		return x + y;
+	}
 }

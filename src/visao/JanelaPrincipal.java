@@ -56,7 +56,8 @@ public class JanelaPrincipal extends JFrame {
 		panel_1.setLayout(new GridLayout(0, 1, 0, 0));
 		
 		txtResultado = new JTextField();
-		txtResultado.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		txtResultado.setEditable(false);
+		txtResultado.setFont(new Font("Tahoma", Font.BOLD, 30));
 		txtResultado.setPreferredSize(new Dimension(600, 70));
 		panel_1.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		panel_1.add(txtResultado);
