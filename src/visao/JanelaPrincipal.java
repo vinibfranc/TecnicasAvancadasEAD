@@ -35,6 +35,11 @@ public class JanelaPrincipal extends JFrame {
 	private JMenuItem mntmSair;
 
 	public JanelaPrincipal() {
+		janela.setVisible(true);
+		janela.getTxtPrimeiroNum().grabFocus(); // ajusta o foco para o textField do primeiro número
+		janela.setResizable(false);
+		janela.setLocationRelativeTo(null);
+		
 		setTitle("Revisão do Ano Passado");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 250);
